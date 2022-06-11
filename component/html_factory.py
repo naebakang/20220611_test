@@ -8,14 +8,14 @@ class Base:
         pass
 
     def get_html(self):
-        ip_guest = self.get_ip_guest()
-        self.create_guest()
-
-        with open('duest_all.txt', 'r') as r:
-            ip = r.readlines()
-
-        num_of_guest_all = 0
-        num_of_guest_today = 0
+        # ip_guest = self.get_ip_guest()
+        # self.create_guest()
+        #
+        # with open('duest_all.txt', 'r') as r:
+        #     ip = r.readlines()
+        #
+        # num_of_guest_all = 0
+        # num_of_guest_today = 0
 
         html = '''
         <!doctype html>
@@ -31,7 +31,7 @@ class Base:
                 <p>{}</p>
             </body>
         </html>
-        '''.format(ip_guest, ip)
+        '''.format(1234, "good")
 
         return html
 
