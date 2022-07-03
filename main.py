@@ -1,7 +1,10 @@
 # File encoding: utf8
 
-from component.html_factory import Base
+from components.functional import html_index
+from components.functional import html_output
 
-ins_base = Base()
 with open("index.html", "w") as f:
-    f.write(ins_base.get_html())
+    f.write(html_index.get_html())
+#
+# with open("output.html", "w") as f:
+#     f.write(html_output.get_html())
